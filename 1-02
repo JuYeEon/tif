@@ -1,0 +1,26 @@
+q, w, e, r, t, y = 0, 0, 0, 0, 0, 0
+a = input()
+list(a)
+print(a)
+b = len(a)
+i = 0
+while b == i:
+  print(a[i])
+  if a[i] == '(':
+    q += 1
+  elif a[i] == ')':
+    w += 1
+  elif a[i] == '{':
+    e += 1
+  elif a[i] == '}':
+    r += 1
+  elif a[i] == '[':
+    t += 1
+  elif a[i] == ']':
+    y += 1
+  i += 1
+print(q, w, e, r, t, y)
+if(q == w and e == r and t == y):
+  print('True')
+else:
+  print('False')
