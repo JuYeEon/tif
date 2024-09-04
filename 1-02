@@ -1,26 +1,36 @@
-q, w, e, r, t, y = 0, 0, 0, 0, 0, 0
-a = input()
-list(a)
-print(a)
-b = len(a)
-i = 0
-while b == i:
-  print(a[i])
-  if a[i] == '(':
-    q += 1
-  elif a[i] == ')':
-    w += 1
-  elif a[i] == '{':
-    e += 1
-  elif a[i] == '}':
-    r += 1
-  elif a[i] == '[':
-    t += 1
-  elif a[i] == ']':
-    y += 1
-  i += 1
-print(q, w, e, r, t, y)
-if(q == w and e == r and t == y):
-  print('True')
-else:
-  print('False')
+#include <stdio.h>
+
+int main() {
+    int i = 0, q = 0, w = 0, e = 0, r = 0, s = 0, t = 0;
+    char a;
+    while(1){
+        scanf("%c", &a);
+        if(a == ' '){
+            break;
+        }
+        else if(a == '('){
+            q++;
+        }
+        else if(a == ')'){
+            w++;
+        }
+        else if(a == '['){
+            e++;
+        }
+        else if(a == ']'){
+            r++;
+        }
+        else if(a == '{'){
+            s++;
+        }
+        else if(a == '}'){
+            t++;
+        } 
+    }
+    if(q == w && e == r && s == t){
+        printf("True");
+    }
+    else{
+        printf("False");
+    }
+}
