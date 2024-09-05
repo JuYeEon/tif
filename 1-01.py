@@ -1,10 +1,10 @@
 num1 = []
 num2 = []
 for i in range(3):
-  n = int(input())
+  n = int(input('num2 : ))
   num1.append(n)
 for i in range(3):
-  n = int(input())
+  n = int(input('num2 : '))
   num2.append(n)
 target = int(input())
 for i in range(0, 3):
