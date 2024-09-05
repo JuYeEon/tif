@@ -1,7 +1,7 @@
 num1 = []
 num2 = []
 for i in range(3):
-  n = int(input('num2 : ))
+  n = int(input('num1 : ))
   num1.append(n)
 for i in range(3):
   n = int(input('num2 : '))
