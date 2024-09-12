@@ -2,11 +2,9 @@ num1 = []
 num2 = []
 result = 'False'
 for i in range(3):
-  n = int(input('num1 : ))
-  num1.append(n)
+  num1.append(int(input('num1 : )))
 for i in range(3):
-  n = int(input('num2 : '))
-  num2.append(n)
+  num2.append(int(input('num2 : ')))
 target = int(input('target : '))
 for i in range(0, 3):
   for j in range(0, 3):
