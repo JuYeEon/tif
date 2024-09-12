@@ -7,7 +7,7 @@ for i in range(3):
 for i in range(3):
   n = int(input('num2 : '))
   num2.append(n)
-target = int(input())
+target = int(input('target : '))
 for i in range(0, 3):
   for j in range(0, 3):
     if num1[i] + num2[j] == target:
